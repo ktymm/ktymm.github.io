@@ -1,0 +1,153 @@
+body {
+  background-color: #111;
+}
+
+h1, h2, h3, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.center-child-text {
+  text-align: center;
+}
+
+.justify-child-text {
+  text-align: justify;
+}
+
+.img-thumb-outer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+
+  /*background-color: #eaeaea;*/
+  /*padding-left: 10px;
+  padding-right: 10px;*/
+}
+
+.img-thumb-outer:after {
+  content: "";
+  display: block;
+  /*padding-top: 170%; /* Fixed aspect ratio */*/
+}
+
+.img-thumb-outer.aspect-60 {
+  padding-top: 170%;
+}
+
+.img-thumb-outer.aspect-100 {
+  padding-top: 100%;
+}
+
+.img-thumb-inner {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.img-thumb-inner img {
+  width: 100%;
+}
+
+.img-thumb-inner h2 {
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 20px;
+  background-color: #111;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.img-thumb-inner:hover h2 {
+  background-color: #ddd;
+  color: black;
+}
+
+.img-thumb-inner a:hover,
+.img-thumb-inner a:visited,
+.img-thumb-inner a:link,
+.img-thumb-inner a:active {
+  text-decoration: none;
+}
+
+
+div[class^="col-lg-"], div[class*=" col-lg-"],
+div[class^="col-md-"], div[class*=" col-md-"],
+div[class^="col-sm-"], div[class*=" col-sm-"],
+div[class^="col-xs-"], div[class*=" col-xs-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.banner-image {
+  max-width: 100%;
+  max-height: auto;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  float:left;
+}
+
+div.centered-div {
+  display: inline-block;
+}
+
+footer {
+  background-color: rgb(238,238,238);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+div.license-img {
+  width: 100px;
+}
+
+div.license-img img {
+  padding-right: 10px;
+}
+
+div.license-txt {
+  flex-grow: 1;
+}
+
+div.license-outer {
+  display: flex;
+}
+
+div#about-me {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+div#about-me h3 {
+  color: white;
+  font-weight: 300;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  div.jumbotron h1,
+  div.jumbotron .h1 {
+    font-size: 44px;
+  }
+}
